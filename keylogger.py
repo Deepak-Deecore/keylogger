@@ -64,15 +64,6 @@ def copy_clip():
 copy_clip()
 
 
-def mic():
-    fs=44100
-    sec=mic_time
-    myrecording=sd.rec(int(sec*fs),samplerate=fs,channels=2)
-    sd.wait()
-
-    write(audio_info,fs,myrecording)
-mic()
-
 def ss():
     im=ImageGrab.grab()
     im.save(ss_info)
